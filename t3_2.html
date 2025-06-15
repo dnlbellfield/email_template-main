@@ -156,6 +156,10 @@
 	        background: #588157 !important;
 	        border-color: #588157 !important;
 	    }
+
+        .desktop-hide {
+              display: none !important;
+            }
         @media screen and (max-width: 600px) {
             .email-container {
                 width: 100% !important;
@@ -184,6 +188,31 @@
             .email-container p {
                 font-size: 17px !important; /* Slightly smaller on narrow */
             }
+
+            .mob-hide {
+              display: none !important;
+            }
+            .mob-show {
+              display: block !important;
+            }
+
+            .left-right-0 {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            .left-right-0 img {
+            
+            border-radius: 0 !important;
+          }
+          .vert-30-padd {
+            padding-top: 30px !important;
+            padding-bottom: 30px !important;
+          }
+
+          .padd-20 {
+            padding: 20px 0 0 !important;
+          }
+            
         }
 
         /* Dark Mode Styles : BEGIN */
@@ -246,65 +275,247 @@
         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
 
 	        <!-- Email Header with Logo : BEGIN -->
-            <tr>
+            <!-- <tr>
                 <td style="padding: 0px 0; text-align: center; background-color: #DAD7CD;" class="darkmode-bg">
                     <img src="img/bites_logo.png" width="100%" height="50" alt="Mindful Bites Logo" border="0" style="height: auto; width:100%; display: block; margin: 0 auto;">
                 </td>
-            </tr>
+            </tr> -->
 	        <!-- Email Header : END -->
 
-            <!-- Hero Image with Text Overlay (Blueberries) : BEGIN -->
             <tr>
-                <td style="background-color: #A3B18A; padding: 0;" class="darkmode-fullbleed-bg">
-                    <!--[if gte mso 9]>
-                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:300px;">
-                    <v:fill type="frame" src="img/blueberries.jpg" color="#A3B18A" />
-                    <v:textbox inset="0,0,0,0">
-                    <![endif]-->
-                    <div role="presentation" style="width: 100%; height: 300px; background-image: url('img/blueberries.jpg'); background-position: center center !important; background-size: cover !important;">
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
-                            <tr>
-                                <td valign="middle" style="text-align: center; padding: 20px; font-family: sans-serif; color: #ffffff;">
-                                    <h1 style="margin: 0; font-size: 42px; line-height: 1.1; color: #ffffff; font-weight: bold; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Mindful Bites</h1>
-                                    <p style="margin: 5px 0 0; font-size: 20px; line-height: 1.2; color: #ffffff; text-align: center; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Cultivating Well-being, One Bite at a Time.</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!--[if gte mso 9]>
-                    </v:textbox>
-                    </v:rect>
-                    <![endif]-->
-                </td>
-            </tr>
-            <!-- Hero Image, Flush : END -->
-
-            <!-- 1 Column Text (Main Intro) : BEGIN -->
-            <tr>
-                <td style="background-color: #ffffff; padding: 20px;" class="darkmode-bg">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <td style="padding: 30px 4%;" class="">
+                    <table
+                        style="width:100%;   text-align:center; box-sizing:border-box; margin:0 auto; font-family:serif; border-collapse:collapse; border-spacing:0;"
+                        cellpadding="0" cellspacing="0">
                         <tr>
-                            <td style="padding: 10px 4%; font-family: sans-serif;   line-height: 20px; color: #344E41;">
-                                <h1 style="margin: 0 0 10px; font-size: 32px; line-height: 1.1; color: #344E41; font-weight: bold; text-align: center;">Welcome to Mindful&nbsp;Bites!</h1>
-                               
+                            <td style="padding:0;">
+                                <h1
+                                    style="font-family:'Times New Roman', Times, serif, serif; font-size:3.5em; color:#38373A; margin:0; padding:0; line-height:1.1;">
+                                    Mindful Bites</h1>
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding: 0 0 10px; font-family: sans-serif;  line-height: 20px; color: #344E41;">
-                               
-                                <p style="margin: 0; font-family: sans-serif; font-size: 18px; line-height: 1.2; color: #344E41; text-align: center;">Your journey to a healthier, more balanced life begins here. At Mindful Bites, we're passionate about helping you cultivate well-being through nutritious eating, sustainable living, and daily mindfulness.</p>
+                            <td style="padding:0; text-align:center;">
+                                <hr style="border:none; border-top:1px solid #7D7C7A; width:60%; margin:0px auto;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:20px 0 0;">
+                                <p
+                                    style="font-family:sans-serif; font-size:1.1em; color:#38373A; margin:0; padding:0; letter-spacing:2px; text-transform:uppercase;">
+                                    YOUR PATH TO WHOLESOME LIVING</p>
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <!-- 1 Column Text (Main Intro) : END -->
+     <!-- Welcome & Intro : BEGIN -->
+     <tr>
+        <td style="background-color: #ffffff; padding: 30px 4%;" class="darkmode-bg ">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 
-         
+	        <!-- Clear Spacer : BEGIN -->
+	        <tr>
+	            <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+	                &nbsp;
+	            </td>
+	        </tr>
+	        <!-- Clear Spacer : END -->
+            <tr>
+              <td class="left-right-6">
+                <h1 style="margin: 0; font-size: 32px; line-height: 1.1; color: #344E41; font-weight: bold; text-align: left; border-bottom: 2px solid #A3B18A; padding-bottom: 5px; margin-bottom: 15px;">
+                  Cultivate Your Space &mdash; Mindful Living Tips
+                </h1>
+              </td>
+            </tr>
+            <tr>
+              <td class="left-right-6">
+                <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.2; color: #344E41;">
+                  Nurture your well-being with small, impactful changes to your daily routine. This edition focuses on creating a mindful home and thriving green spaces.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Welcome & Intro : END -->
+<!-- IMAGE SECTION : BEGIN -->
+                  <!-- 2 Even Columns (Image Left, Text Right) : BEGIN -->
+      <tr>
+          <td style="padding: 20px 10px; background-color: #ffffff;" class="darkmode-bg left-right-0 ">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                      <!-- Column 1: Image -->
+                      <th valign="middle" width="50%" class="stack-column-center">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                  <td style="padding: 0 10px; text-align: center" class="left-right-0">
+                                      <img src="img/basket_1.avif" width="270" height="200" alt="Hands preparing a healthy meal with fresh ingredients" border="0" style="width: 100%;  height: auto; background: #dddddd; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; color: #555555; border-radius: 20%;" class="border-reset ">
+                                  </td>
+                              </tr>
+                          </table>
+                      </th>
+                      <!-- Column 2: Text -->
+                      <th valign="middle" width="50%" class="stack-column-center vert-30-padd">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                  <td style="  padding: 10px; " class="center-on-narrow left-right-6">
+                                      <h2 style="margin: 0 0 0px 0; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 1.2; color: #588157; font-weight: bold; text-align: left;" class="center-on-narrow">Mindful Meals & Meal&nbsp;Prep</h2>
+                                      
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 20px; color: #344E41; padding: 0 10px; text-align: left;" class="center-on-narrow left-right-6 ">
+                                      <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.2; color: #344E41;">Transform your relationship with food by embracing mindful eating. Learn how simple meal prep strategies can save time and foster healthier habits, ensuring every bite nourishes your body and soul.</p>
+                                  </td>
+                              </tr>
+                              <!-- <tr>
+                                  <td align="left" style="padding: 10px 4%; text-align: left; float: left;" class="float-none">
+                                      <table align="center">
+                                          <tr>
+                                              <td class="button-td button-td-primary" style="border-radius: 4px; background: #588157;">
+                                                  <a class="button-a button-a-primary" href="https://example.com/shop-offer"
+                                                      style="background: #588157; border: 1px solid #588157; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 16px; text-decoration: none; padding: 13px 25px; color: #ffffff; display: block; border-radius: 4px;">Shop
+                                                      The Sale</a>
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr> -->
 
+                          </table>
+                      </th>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+      <!-- 2 Even Columns : END -->
+
+      <!-- 2 Even Columns (Image Right, Text Left) : BEGIN -->
+      <tr>
+          <td dir="rtl" style="padding: 20px 10px; background-color: #ffffff;" class="darkmode-bg left-right-0 mob-hide">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                      <!-- Column 1: Image -->
+                      <th valign="middle" width="50%" class="stack-column-center">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                  <td dir="ltr" style="padding: 0 10px; text-align: center" class="left-right-0">
+                                      <img src="img/home_int_1.png" width="270" height="200" alt="Indoor herb garden on a windowsill" border="0" style="width: 100%;   height: auto; background: #dddddd; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; color: #555555; border-radius: 20%;">
+                                  </td>
+                              </tr>
+                          </table>
+                      </th>
+                      <!-- Column 2: Text -->
+                      <th  valign="middle" width="50%" class="stack-column-center">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                  <td dir="ltr" style="font-family: Arial, Helvetica, sans-serif;  color: #344E41; padding: 0  10px; text-align: left;" class="center-on-narrow ">
+                                      <h2 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 1.2; color: #588157; font-weight: bold; text-align: left;" class="center-on-narrow">Green Living in Your&nbsp;Home</h2>
+                                     
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td dir="ltr" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 20px; color: #344E41; padding:  10px; text-align: left;" class="center-on-narrow">
+                                     
+                                      <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.2; color: #344E41;">Discover simple ways to integrate sustainability into your home environment. From creating a small herb garden to decluttering with intention, cultivate a space that supports your well-being and the planet.</p>
+                                  </td>
+                              </tr>
+                              <!-- <tr>
+                                  <td align="left" style="padding: 10px 4%; text-align: left; float: left;">
+                                      <table align="center">
+                                          <tr>
+                                              <td class="button-td button-td-primary" style="border-radius: 4px; background: #588157;">
+                                                  <a class="button-a button-a-primary" href="https://example.com/shop-offer"
+                                                      style="background: #588157; border: 1px solid #588157; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 16px; text-decoration: none; padding: 13px 25px; color: #ffffff; display: block; border-radius: 4px;">Shop
+                                                      The Sale</a>
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr> -->
+                          </table>
+                      </th>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+      <!-- 2 Even Columns : END -->
+
+    <!-- hidden mobile rtl correction -->
+                           <tr>
+                  <td align="center" style="background-color: #ffffff;" class=" desktop-hide mob-show darkmode-bg">
+                                               
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                           <tr>
+                                  <td dir="ltr" style="padding: 0 10px; text-align: center" class="left-right-0">
+                                      <img src="img/home_int_1.png" width="270" height="200" alt="Indoor herb garden on a windowsill" border="0" style="width: 100%;   height: auto; background: #dddddd; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; color: #555555; border-radius: 20%;">
+                                  </td>
+                              </tr>
+                            <tr>
+                              <td align="center" class="vert-30-padd">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                  <tr>
+                                    <td dir="ltr" style="font-family: Arial, Helvetica, sans-serif; color: #344E41; padding: 0 10px; text-align: left;" class="center-on-narrow">
+                                      <h2 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 1.2; color: #588157; font-weight: bold; text-align: left;" class="center-on-narrow">Green Living in Your Home</h2>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td dir="ltr" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 20px; color: #344E41; padding: 10px; text-align: left;" class="center-on-narrow left-right-6">
+                                      <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.2; color: #344E41;">Discover simple ways to integrate sustainability into your home environment. From creating a small herb garden to decluttering with intention, cultivate a space that supports your well-being and the&nbsp;planet.</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                   
+                  </td>
+                </tr>
+    <!-- hidden mobile rtl correction -->
+
+                            <!-- 2 Even Columns (Image Left, Text Right) : BEGIN -->
+      <tr>
+          <td style="padding: 20px 10px; background-color: #ffffff;" class="darkmode-bg left-right-0 ">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                      <!-- Column 1: Image -->
+                      <th valign="middle" width="50%" class="stack-column-center">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                  <td style="padding: 0 10px; text-align: center" class="left-right-0">
+                                      <img src="img/movement_1.png" width="270" height="200" alt="Hands preparing a healthy meal with fresh ingredients" border="0" style="width: 100%;  height: auto; background: #dddddd; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; color: #555555; border-radius: 20%;">
+                                  </td>
+                              </tr>
+                          </table>
+                      </th>
+                      <!-- Column 2: Text -->
+                      <th valign="middle" width="50%" class="stack-column-center vert-30-padd">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                  <td style="  padding: 10px; " class="center-on-narrow left-right-6">
+                                      <h2 style="margin: 0 0 0px 0; font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 1.2; color: #588157; font-weight: bold; text-align: left;" class="center-on-narrow">Movement & Mindfulness&nbsp;Moments</h2>
+                                      
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 20px; color: #344E41; padding: 0 10px; text-align: left;" class="center-on-narrow left-right-6">
+                                      
+                                      <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.2; color: #344E41;">Integrate refreshing movement into your day, whether it's a quick stretch, a walk in nature, or a moment of quiet reflection. Discover how these brief pauses can boost energy, reduce stress, and enhance your overall sense of&nbsp;peace.</p>
+                                  </td>
+                              </tr>
+                          </table>
+                      </th>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+      <!-- 2 Even Columns : END -->
+<!-- IMAGE SECTION : END -->
+          
             <!-- 1 Column Text (Key Benefits) : BEGIN -->
             <tr>
-                <td style="background-color: #ffffff; padding: 20px 0 0;" class="darkmode-bg">
+                <td style="background-color: #ffffff; padding: 40px 0 0;" class="darkmode-bg padd-20">
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                       <tr>
                             <td style="padding: 0; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #344E41;">
@@ -365,12 +576,12 @@
 
             <!-- CTA Section : BEGIN -->
             <tr>
-	            <td valign="middle" style="text-align: center; background-color: #A3B18A; padding: 40px 20px;" class="darkmode-fullbleed-bg">
+	            <td valign="middle" style="text-align: center; background-color: #ffffff; padding: 0px 20px;" class="darkmode-fullbleed-bg">
 	                <div>
 	                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 	                        <tr>
 	                            <td valign="middle" style="text-align: center; padding: 0; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #344E41;">
-	                                <p style="margin: 0 0 20px; font-size: 20px; line-height: 1.3; font-weight: bold; color: #344E41;">Ready to Nurture Your Well-being?</p>
+	                               
 	                                <!-- Button : BEGIN -->
 	                                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
 	                                    <tr>
@@ -382,6 +593,14 @@
 	                                <!-- Button : END -->
 	                            </td>
 	                        </tr>
+
+	        <!-- Clear Spacer : BEGIN -->
+	        <tr>
+	            <td aria-hidden="true" height="60" style="font-size: 0px; line-height: 0px;">
+	                &nbsp;
+	            </td>
+	        </tr>
+	        <!-- Clear Spacer : END -->
 	                    </table>
 	                </div>
 	            </td>
